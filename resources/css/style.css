@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Whole Doc */
+body{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background: url(../img/back.jpg)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.over{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #2c3e50;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.container{
+    width: 40%; 
+    margin: 40px auto 85px auto;
+    background: #00b894;
+    padding: 40px;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+/* Radio Buttons */
+.container .radiobtns{
+    background: #dff9fb;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.radiobtns .choose{
+    width: 80px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    color: #2c3e50;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    /* background: #9b59b6; */
+}
+
+.radiobtns .choose p{
+    margin-left: 30px;
+    height: auto;
+}
+
+.radiobtns .choose input[type="radio"]{
+    display: none;
+}
+
+.radiobtns .choose .checkmark{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #2c3e50;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in;
+}
+
+.radiobtns .choose .checkmark::after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    background: #2c3e50;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+}
+
+.radiobtns .choose input[type="radio"]:checked ~ .checkmark::after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* For Numbers */
+.container .fornum{
+    background: #dff9fb;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.container .fornum input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background: #4bcffa;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    transition: all 0.4s ease-in;
+}
+
+.container .fornum input:focus{
+    font-size: 1rem;
+}
+
+.container .fornum input:focus::placeholder{
+    color: transparent;
+}
+
+/* Output */
+.container .output{
+    background: #dff9fb;
+    height: auto;
+    max-height: 300px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow-y: auto;
+    transition: all 0.4s ease-in;
+}
+
+.container .output p{
+    text-align: left;
+    color: #2c3e50;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.container .output p > p{
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.container .output p > p:nth-child(even){
+    background: #ffcccc;
+    border-radius: 5px;
+}
+
+.container .output p > p:nth-child(odd){
+    background: #fffa65;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.container .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.container .btns a{
+    width: 100px;
+    height: auto;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px 20px;
+    background: #dff9fb;
+    color: #2c3e50;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.4s ease-in;
+}
+
+.container .btns a:hover{
+    background: #4bcffa;
+    border: 4px solid #dff9fb;
+}
+
+/* For SVG Logo */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.logo svg{
+    animation: fill 2s ease forwards 4s;
+}
+
+.logo svg path:nth-child(1){
+    stroke-dasharray: 355.7261657714844;
+    stroke-dashoffset: 355.7261657714844;
+    animation: line-anim 2s ease forwards;
+}
+
+.logo svg path:nth-child(2){
+    stroke-dasharray: 269.989990234375;
+    stroke-dashoffset: 269.989990234375;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+
+.logo svg path:nth-child(3){
+    stroke-dasharray: 383.3763427734375;
+    stroke-dashoffset: 383.3763427734375;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+
+.logo svg path:nth-child(4){
+    stroke-dasharray: 310.0673522949219;
+    stroke-dashoffset: 310.0673522949219;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+
+.logo svg path:nth-child(5){
+    stroke-dasharray: 249.33624267578125;
+    stroke-dashoffset: 249.33624267578125;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+
+.logo svg path:nth-child(6){
+    stroke-dasharray: 172.39739990234375;
+    stroke-dashoffset: 172.39739990234375;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+
+.logo svg path:nth-child(7){
+    stroke-dasharray: 218.12271118164062;
+    stroke-dashoffset: 218.12271118164062;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+
+.logo svg path:nth-child(8){
+    stroke-dasharray: 261.73681640625;
+    stroke-dashoffset: 261.73681640625;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+
+.logo svg path:nth-child(9){
+    stroke-dasharray: 176.43907165527344;
+    stroke-dashoffset: 176.43907165527344;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+
+.logo svg path:nth-child(10){
+    stroke-dasharray: 179.95748901367188;
+    stroke-dashoffset: 179.95748901367188;
+    animation: line-anim 2s ease forwards 2.7s;
+}
+
+.logo svg path:nth-child(11){
+    stroke-dasharray: 151.25601196289062;
+    stroke-dashoffset: 151.25601196289062;
+    animation: line-anim 2s ease forwards 3s;
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: #fff;
+    }
+}
+
+/* Modals */
+/* Both About and Contact Me */
+.modal-container-about,
+.modal-container-contact{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(5, 59, 43, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in;
+}
+
+.modal-a,
+.modal-c{
+    background: #00b894;
+    width: 500px;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.modal-a h2,
+.modal-c h2{
+    font-size: 1.3rem;
+    padding: 10px 0;
+}
+
+.modal-a > a,
+.modal-c > a{
+    width: 150px;
+    height: 20px;
+    text-decoration: none;
+    background: #2c3e50;
+    padding: 5px 20px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+.modal-a > a:hover,
+.modal-c > a:hover{
+    color: #2c3e50;
+    background: #fff;
+}
+
+/* Only About */
+.modal-a p{
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* Only Contact Me */
+.modal-c .cont{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-c .cont a{
+    text-decoration: none;
+    color: #fff;
+    background: #2c3e50;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: all 0.4s ease-in;
+}
+
+.modal-c .cont a:hover{
+    color: #9b59b6;
+    background: #fff;
+}
+
+.modal-c .cont a i{
+    font-size: 1.5rem;
+}
+
+.show-modal{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 184, 148, 0.5);
+    padding: 12px 30px;
+}
+
+footer p{
+    font-size: 0.8rem;
+    color: #fff;
+    opacity: 0.8;
+}
