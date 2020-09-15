@@ -4,6 +4,8 @@ window.onload = function(){
     document.getElementById("ui").value = "";
     // Reset radio to default
     document.getElementById("cat").checked = true;
+    // Reset input and Output when radio check
+    clearInputOutput();
     // Get letters while typing
     document.getElementById("ui").addEventListener("keyup", function(event){
         // If not empty
@@ -51,25 +53,13 @@ function clearInputOutput(){
     if (document.querySelector('input[name="radio"]')) {
         document.querySelectorAll('input[name="radio"]').forEach((element) => {
             element.addEventListener("change", function(event) {
+            // For Input
             document.getElementById("ui").value = "";
+            document.getElementById("ui").placeholder = "No. of Facts (Max 500)";
+            // For Output
             document.getElementById("out").style.color = "#2c3e50";
-            document.getElementById("out").innerHTML = "Your Input related Fact will be available here!";
-            setPlaceholder();
+            document.getElementById("out").innerHTML = "Your Input related Facts will be available here!";
           });
         });
-    }
-}
-
-// Function to set input placeholder according to radio
-function setPlaceholder(){
-    let type = document.querySelector('input[name="radio"]:checked').value;
-    if(type == "date"){
-        document.getElementById("ui").placeholder = "Enter any Date(mm/dd)";
-    }
-    else if(type == "trivia" || type == "math"){
-        document.getElementById("ui").placeholder = "Enter any Number";
-    }
-    else{
-        document.getElementById("ui").placeholder = "Enter any Year(yyyy)";
     }
 }
