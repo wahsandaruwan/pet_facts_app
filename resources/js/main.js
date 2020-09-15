@@ -41,7 +41,7 @@ window.onload = function(){
         // If Empty
         else{
             document.getElementById("out").style.color = "#2c3e50";
-            document.getElementById("out").innerHTML = "Your Input related Fact will be available here!";
+            document.getElementById("out").innerHTML = "Your Input related Facts will be available here!";
         }
     })
 }
