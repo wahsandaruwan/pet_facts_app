@@ -206,73 +206,55 @@ body{
 }
 
 .logo svg{
-    animation: fill 2s ease forwards 4s;
+    animation: fill 2s ease forwards 2.5s;
 }
 
 .logo svg path:nth-child(1){
-    stroke-dasharray: 355.7261657714844;
-    stroke-dashoffset: 355.7261657714844;
+    stroke-dasharray: 740.3851318359375;
+    stroke-dashoffset: 740.3851318359375;
     animation: line-anim 2s ease forwards;
 }
 
 .logo svg path:nth-child(2){
-    stroke-dasharray: 269.989990234375;
-    stroke-dashoffset: 269.989990234375;
+    stroke-dasharray: 302.5206298828125;
+    stroke-dashoffset: 302.5206298828125;
     animation: line-anim 2s ease forwards 0.3s;
 }
 
 .logo svg path:nth-child(3){
-    stroke-dasharray: 383.3763427734375;
-    stroke-dashoffset: 383.3763427734375;
+    stroke-dasharray: 294.8018798828125;
+    stroke-dashoffset: 294.8018798828125;
     animation: line-anim 2s ease forwards 0.6s;
 }
 
 .logo svg path:nth-child(4){
-    stroke-dasharray: 310.0673522949219;
-    stroke-dashoffset: 310.0673522949219;
+    stroke-dasharray: 750.4240112304688;
+    stroke-dashoffset: 750.4240112304688;
     animation: line-anim 2s ease forwards 0.9s;
 }
 
 .logo svg path:nth-child(5){
-    stroke-dasharray: 249.33624267578125;
-    stroke-dashoffset: 249.33624267578125;
+    stroke-dasharray: 398.3812255859375;
+    stroke-dashoffset: 398.3812255859375;
     animation: line-anim 2s ease forwards 1.2s;
 }
 
 .logo svg path:nth-child(6){
-    stroke-dasharray: 172.39739990234375;
-    stroke-dashoffset: 172.39739990234375;
+    stroke-dasharray: 268.6627197265625;
+    stroke-dashoffset: 268.6627197265625;
     animation: line-anim 2s ease forwards 1.5s;
 }
 
 .logo svg path:nth-child(7){
-    stroke-dasharray: 218.12271118164062;
-    stroke-dashoffset: 218.12271118164062;
+    stroke-dasharray: 294.8006896972656;
+    stroke-dashoffset: 294.8006896972656;
     animation: line-anim 2s ease forwards 1.8s;
 }
 
 .logo svg path:nth-child(8){
-    stroke-dasharray: 261.73681640625;
-    stroke-dashoffset: 261.73681640625;
+    stroke-dasharray: 321.3614196777344;
+    stroke-dashoffset: 321.3614196777344;
     animation: line-anim 2s ease forwards 2.1s;
-}
-
-.logo svg path:nth-child(9){
-    stroke-dasharray: 176.43907165527344;
-    stroke-dashoffset: 176.43907165527344;
-    animation: line-anim 2s ease forwards 2.4s;
-}
-
-.logo svg path:nth-child(10){
-    stroke-dasharray: 179.95748901367188;
-    stroke-dashoffset: 179.95748901367188;
-    animation: line-anim 2s ease forwards 2.7s;
-}
-
-.logo svg path:nth-child(11){
-    stroke-dasharray: 151.25601196289062;
-    stroke-dashoffset: 151.25601196289062;
-    animation: line-anim 2s ease forwards 3s;
 }
 
 @keyframes line-anim{
