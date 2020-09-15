@@ -10,12 +10,12 @@
 
 /* Whole Doc */
 body{
-    position: relative;
     width: 100vw;
     height: auto;
     background: url(../img/back.jpg)no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    transition: all 0.5s ease-in;
 }
 
 .over{
@@ -30,12 +30,54 @@ body{
 }
 
 .container{
+    position: relative;
     width: 40%; 
     margin: 40px auto 85px auto;
     background: #00b894;
     padding: 40px;
     border-radius: 5px;
     min-width: 300px;
+    left: -100%;
+    /* Animation */
+    animation: c1 1.5s forwards ease-out;
+}
+/* Animation for Main Container */
+@keyframes c1{
+    10%{
+        left: 0;
+    }
+
+    20%{
+        left: -3%;
+    }
+
+    30%{
+        left: 0;
+    }
+
+    40%{
+        left: -2%;
+    }
+
+    50%{
+        left: 0;
+    }
+
+    60%{
+        left: -1%;
+    }
+
+    70%{
+        left: 0;
+    }
+
+    80%{
+        left: -0.5%;
+    }
+
+    100%{
+        left: 0;
+    }
 }
 
 /* Radio Buttons */
